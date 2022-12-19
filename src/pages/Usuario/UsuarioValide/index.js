@@ -39,15 +39,15 @@ function UsuarioValide() {
             const response = await postAccess();
             console.log("no ingreso");
             console.log(response);
-            if (response.data.validacion === true) {
-              // <Link to={`/nuevo-usuario`}>Your Name</Link>;
-              if (correo === "jorge.mendoza@gmail.com") {
-                navigate("/home/nueva-incidencia");
-              } else if (correo === "juan.montoro@gmail.com") {
-                navigate("/home/lista-incidencia");
-              }
-              console.log("ingreso");
+            // if (response.data.validacion === true) {
+            // <Link to={`/nuevo-usuario`}>Your Name</Link>;
+            if (correo === "jorge.mendoza@gmail.com") {
+              navigate("/home/nueva-incidencia");
+            } else if (correo === "juan.montoro@gmail.com") {
+              navigate("/home/lista-incidencia");
             }
+            console.log("ingreso");
+            // }
           }}
         />
       </GestorDatos>
